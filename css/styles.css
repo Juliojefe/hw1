@@ -3,7 +3,7 @@ html, body {
 }
 body {
   margin: 0;
-  background-color: white;
+  background-color: #efefef;
 }
 .navBarDiv {
   place-items: center;
@@ -40,20 +40,18 @@ body {
 }
 
 .navBarDiv header a.active {
-  /* background-color: #0D417B; */
   background-color: #6b6b6b;
   color: #ffffff;
 }
 
 .navBarDiv header a:hover {
   color: #ffffff;
-  /* background-color: #6b6b6b; */
   background-color: #0D417B;
 }
 
 .focalPointDiv {
   min-height: 100vh;
-  width:  min(1210px, 90%);
+  width: 85%;
   margin: 0 auto;
   background-color: #cbc9c9;
   display: flex;
@@ -61,9 +59,9 @@ body {
   box-sizing: border-box;
 }
 
-.footer{
-  /* background: black;  */
-  text-align: center; 
-  padding: 30px 0;
-  height: 100px;
+.footer {
+  margin-top: auto;
+  padding: 24px 20px;
+  background: black;
+  color: white;
 }
