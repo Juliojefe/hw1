@@ -1,71 +1,69 @@
-*{box-sizing:border-box}
-html,body{
-  font-family: "Segoe UI", Inter, Roboto, system-ui, sans-serif;
-  background: #0e1117;
-  color: #e5e7eb;
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: white;
+}
+.navBarDiv {
+  place-items: center;
+  padding: 0;
+  background-color: black;
 }
 
-.navbar_container {
-  margin: 0 auto;
-  padding: 16px 0;
-  height: auto;
+.navBarDiv h1 {
+  font-size: 28px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding-top: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navBarDiv header {
+  padding: 20px 20px 20px 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
   gap: 12px;
+  background: #ffffff;
+  width: 100%;
   background: transparent;
-
+  display: flex;
 }
 
-.navlinks{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
+.navBarDiv header a {
   padding: 8px 12px;
-  border-radius: 12px;
-  background: #161b22;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  border: 2px solid black;
+  background-color: #ffffff;
+  color: black;
 }
 
-.navlinks a{
-  color: #9ca3af;
-  padding: 8px 12px;
-  border-radius: 6px;
-  font-weight: 500;
+.navBarDiv header a.active {
+  /* background-color: #0D417B; */
+  background-color: #6b6b6b;
+  color: #ffffff;
 }
 
-.navlinks a.active{
-  color: #071026;
-  background: #2d9cdb;
+.navBarDiv header a:hover {
+  color: #ffffff;
+  /* background-color: #6b6b6b; */
+  background-color: #0D417B;
 }
 
-.btn-primary{
-  background: #2d9cdb;
-  color: #fff;
-  padding: 8px 14px;
-  border-radius: 6px;
-  font-weight: 600;
-  border: none;
-  cursor: pointer;
-  transition: background 0.2s;
+.focalPointDiv {
+  min-height: 100vh;
+  width:  min(1210px, 90%);
+  margin: 0 auto;
+  background-color: #cbc9c9;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
-.btn-primary:hover{ 
-  background: #1b74c9; 
-}
-
-.code-box{
-  background: #161b22;
-  padding: 16px;
-  border-radius: 6px;
-  font-family: "Courier New", monospace;
-  color: #2d9cdb;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
-  overflow-x: auto;
-}
-
-a:focus, button:focus {
-  outline: 2px solid #2d9cdb;
-  outline-offset: 2px;
+.footer{
+  /* background: black;  */
+  text-align: center; 
+  padding: 30px 0;
+  height: 100px;
 }
